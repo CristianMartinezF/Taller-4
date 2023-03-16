@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario #1</title>
+</head>
+<body>
+    <h1>Zoo Keeper Application Form </h1>
+
+    <p><em>Please complete the. Mandatory fields are marked with a<span style="color: red;"> *</span></em></p>
+
+
+    <form action="">
+        <fieldset>
+            <legend><strong>CONTACT DETAILS</strong></legend>
+            <p>
+                <label for="Name">
+                    Name
+                    <span style="color: red;">*</span>
+                </label>
+
+                <input type="text" maxlength="60" pattern="[a-Az-Zñ-Ñ]">
+            </p>
+            <p>
+                <label for="Telephone">
+                    Telephone
+                    <span style="color: red;">*</span>
+                </label>
+
+                <input type="text" pattern="^\+\d{2}-\d{3}-\d{9}">
+            </p>
+            <p>
+                <label for="Email">
+                    Email
+                    <span style="color: red;">*</span>
+                </label>
+
+                <input type="email" name="" id=""maxlength="30">
+            </p>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend><strong>PERSONAL INFORMATION</strong></legend>
+            <span style="color: red;">*</span>Age
+
+            <input type="number" min="18" max="99"><br><br>
+
+            Gender
+            
+            <datalist id="Lista">
+                <option value="Male"></option>
+                <option value="Female"></option>
+            </datalist>
+
+            <input type="text" list="Lista" placeholder="Escoja una opción"><br><br>
+            
+            <table>
+                <tr>
+                    <td>When did you<br>
+                        first know you<br>
+                        wanted to be a<br>
+                        zoo-keeper?</td>
+                    
+                    <td><textarea name="" id="" cols="30" rows="7"></textarea><br></td>
+                </tr>
+                <tr>
+                    </td>
+                </tr>
+            </table>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend><strong>PICK YOUR FAVORITE ANIMALS</strong></legend>
+
+            <input type="checkbox">Zebra &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <input type="checkbox">Cat
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <input type="checkbox">Anaconda &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <input type="checkbox">Human <br><br>
+
+            <input type="checkbox">Elephant &nbsp;&nbsp;&nbsp;
+            
+            <input type="checkbox">Wildebeest &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <input type="checkbox">Pigeon
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            
+            <input type="checkbox">Crab
+        </fieldset><br>
+    </form>
+    <input type="button" value="Submit Application">
+
+</body>
+</html>

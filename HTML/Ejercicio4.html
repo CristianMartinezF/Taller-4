@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <table> 
+            <tr>
+                <td style="text-align: right;"><strong>Account Type:</strong></td>
+                <td><input type="radio" name="option" checked>&nbsp; Individual
+                    <input type="radio" name="option">&nbsp; Entity</td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"><strong>First Name:</strong></td>
+                <td><form action="">
+                    <input type="text" name="First" required pattern="(Mr|Ms|Mrs)\s[a-zA-Z]+\s{0,2}[a-zA-Z]+" size="20"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"><strong>Middle Name or Initial:</strong></td>
+                <td><input type="text" name="Middle" required pattern="[A-Z][a-z]?"size="20"></td>
+            </tr>
+            
+            <tr>
+                <td style="text-align: right;"><strong>Last Name:</strong></td>
+                <td><input type="text" name="Last" required pattern="(Mr|Ms|Mrs)\s[a-Az-Z]+\s{0,3}[a-zA-Z]+" size="20"></td>
+            </tr>
+                
+            <tr>
+                <td style="text-align: right;"><strong>Sufflix</strong></td>
+                <td> 
+                    <datalist id="Lista">
+                    <option value="Mr"></option>
+                    <option value="Mrs"></option>
+                    <option value="Ms"></option></datalist>
+                    <input  size="4" type="text" list="Lista" placeholder="--">
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;"><strong>Taxpayer Identification Number:</strong></td>
+                <td><input type="number" name="number" min="1" max="10">
+                    <input type="number" name="number" min="1" max="10">
+                    <input type="number" name="number" min="1" max="10"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"><strong>Date of Birth:</strong></td>
+                <td><input type="date" name="date" size="24"></td>
+            </tr>
+            
+            <tr>
+                <td style="text-align: right;"><strong>Street Address:</strong></td>
+                <td><input type="text" name="addrees" size="15">
+                    <input type="text" name="addrees" size="15">
+                    <input type="text" name="addrees" size="15"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"><strong>City:</strong></td>
+                <td><input type="text" name="city"></td>
+            </tr>
+            
+            <tr>
+                <td style="text-align: right;"><strong>State:</strong></td>
+                <td><datalist id="State">
+                    <option value="Amazonas"></option>
+                    <option value="Antioquia"></option>
+                    <option value="Arauca"></option>
+                    <option value="Atlántico"></option>
+                    <option value="Bolívar"></option>
+                    <option value="Boyaca"></option>
+                    <option value="Caldas"></option>
+                    <option value="Caquetá"></option>
+                    <option value="Casanare"></option>
+                    <option value="Cauca"></option>
+                    <option value="Cesar"></option>
+                    <option value="Chocó"></option>
+                    <option value="Cordoba"></option>
+                    <option value="Cundinamarca"></option>
+                    <option value="Guainía"></option>
+                    <option value="Guaviare"></option>
+                    <option value="Huila"></option>
+                    <option value="La Guajira"></option>
+                    <option value="Magdalena"></option>
+                    <option value="Meta"></option>
+                    <option value="Nariño"></option>
+                    <option value="Norte de Santander"></option>
+                    <option value="Putumayo"></option>
+                    <option value="Quindío"></option>
+                    <option value="Risaralda"></option>
+                    <option value="San Andres y Providencia"></option>
+                    <option value="Santander"></option>
+                    <option value="Sucre"></option>
+                    <option value="Tolima"></option>
+                    <option value="Valle del Cauca"></option>
+                    <option value="Vaupés"></option>
+                    <option value="Vichada"></option>
+                </datalist>
+
+                <input size="5" type="text" list="State"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"><strong>Zip Code:</strong></td>
+                <td><input type="text" id="identificacion" name="Zip code" required pattern="\d{6}(\d{4})?"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"><strong>Home Phone:</strong></td>
+                <td><input type="text" id="telefono" name="telefono" required pattern="\+\d{2}\s\d{3}\s\d{7}"></td>
+            </tr>
+            
+            <tr>
+                <td style="text-align: right;"><strong>Driver's License/State ID Number:</strong></td>
+                <td><input type="text" name="Middle" pattern="" size="24"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"><strong>Issuing State:</strong></td>
+                <td><input type="text" id="Issuing" name="phone" required pattern="D\d+"></td>
+            </tr>
+
+            <tr>
+                <td style="text-align: right;"><strong>Expiration Date:</strong></td>
+                <td><input type="text" size="7" id="fecha" name="fecha" required
+                    pattern="(0?[1-9]|1[012])" placeholder="MM"></td>
+                
+                <td><input type="text" size="7" id="fecha" name="fecha" required
+                    pattern="(0?[1-9]|[12][0-9]|3[01])" placeholder="DD"></td>
+                
+                <td><input type="text" size="7" id="fecha" name="fecha" required
+                    pattern="(20)[0-9]{2}" placeholder="YYYY"></td>
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td><input type="submit"></td>
+            </tr>
+        
+           
+        </table>
+    </fieldset>
+</body>
+</html>
